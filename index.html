@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("lxS2625i2LZiyR78-"); 
+    })();
+</script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Parth Dwivedi </h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#graphics">Graphics</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section hidden">
+            <h2>About Me</h2>
+            <p>
+
+Hi, I am Parth a trailblazing 11th grader who is coding his way to the future! When he is not hitting the books, he is building innovative digital solutions for fun. His latest creation? This website that's not only his first-ever upload to the internet but also a versatile boilerplate design. 
+</p>
+        </section>
+
+        <section id="projects" class="section hidden">
+            <h2>Talents</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>coder for fun</h3>
+                    <p>My projects mostly involve use of languages like java and python. My most prized project includes an console integrating engine </p>
+                </div>
+                <div class="project-card">
+                    <h3>Hardware projects</h3>
+                    <p>I have work experience with both arduino and raspberry pi, built many fun projects with them including a radar automated car and a vaccum cleaner</p>
+                </div>
+                <div class="project-card">
+                    <h3>graphic designing </h3>
+                    <p>yes lastly, I have experience in mediocre level graphic designing and would like to include some of my creations here. </p>
+                </div>
+            </div>
+        </section>
+        <section id="graphics" class="section hidden">
+            <img src="output.jpg" alt="cat">
+            <img src="output (1).jpg" alt="woman">
+        </section>
+<section id="contact" class="section hidden">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+    <p id="form-message"></p> <!-- This will display the success/error message -->
+</section>
+
+        
+        
+    </main>
+
+    <footer class="hidden">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
